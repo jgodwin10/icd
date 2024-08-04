@@ -1,5 +1,4 @@
 import React from "react";
-import ks from "../Images/hero.jpg";
 
 const Hero = () => {
   return (

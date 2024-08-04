@@ -5,8 +5,12 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // IMPORTED PAGES
-
 import Home from "./Pages/Home.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
+import Academics from "./Pages/Academics.jsx";
+import Programs from "./Pages/Programs.jsx";
+import News from "./Pages/News.jsx";
+import Partnership from "./Pages/Partnership.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +20,26 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/academics",
+        element: <Academics />,
+      },
+      {
+        path: "/programs",
+        element: <Programs />,
+      },
+      {
+        path: "/news",
+        element: <News />,
+      },
+      {
+        path: "/partnership",
+        element: <Partnership />,
       },
     ],
   },

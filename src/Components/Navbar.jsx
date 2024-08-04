@@ -1,20 +1,22 @@
 import React from "react";
 import Logo from "../Images/Logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="md:px-[50px] fixed left-0 w-full -top-1 px-6 bg-white py-2 z-[999999]">
       <div className="max-w-[1500px] flex items-center gap-4 justify-between mx-auto ">
-        <img className="md:h-[90px] h-[50px]" src={Logo} alt="" />
+        <Link to={"/"}>
+          <img className="md:h-[90px] h-[50px]" src={Logo} alt="" />
+        </Link>
         <div className="uppercase hidden text-[1.2vw] 2xl:text-base lg:flex items-center gap-3">
-          <NavLink>about</NavLink>
-          <NavLink>academics</NavLink>
-          <NavLink>programs</NavLink>
+          <NavLink to={"/about-us"}>about</NavLink>
+          <NavLink to={"/academics"}>academics</NavLink>
+          <NavLink to={"/programs"}>programs</NavLink>
           <NavLink>events</NavLink>
           <NavLink>research</NavLink>
-          <NavLink>news</NavLink>
-          <NavLink>partnerships</NavLink>
+          <NavLink to={"/news"}>news</NavLink>
+          <NavLink to={"/partnership"}>partnerships</NavLink>
           <NavLink>media</NavLink>
         </div>
         <div className="hidden lg:block">
