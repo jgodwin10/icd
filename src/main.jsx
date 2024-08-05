@@ -11,6 +11,8 @@ import Academics from "./Pages/Academics.jsx";
 import Programs from "./Pages/Programs.jsx";
 import News from "./Pages/News.jsx";
 import Partnership from "./Pages/Partnership.jsx";
+import Partner from "./Pages/Partner.jsx";
+import Events from "./Pages/Events.jsx";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "/partnership",
         element: <Partnership />,
+      },
+      {
+        path: "/partner",
+        element: <Partner />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
     ],
   },

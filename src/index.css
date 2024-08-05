@@ -12,3 +12,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.active {
+  color: #34b376;
+}

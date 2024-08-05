@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const pathname = useLocation();
@@ -15,9 +16,10 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="md:mt-24 mt-12">
+      <div className="md:mt-24 pb-12 mt-12">
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 };

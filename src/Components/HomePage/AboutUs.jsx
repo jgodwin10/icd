@@ -5,9 +5,7 @@ const AboutUs = () => {
   return (
     <div className="md:px-[50px] px-6">
       <div className="max-w-[1500px] py-8 pb-16 md:py-16 mx-auto">
-        <h2 className="capitalize text-center md:text-[2.5vw] text-[5.3vw]">
-          Who we are
-        </h2>
+        <h2 className=" font-semibold text-center md:text-[2.5vw] text-[5.3vw]">Who we are</h2>
         <div className="grid pt-6 md:pt-8 lg:pt-12 grid-cols-1 md:gap-5 gap-6 lg:gap-8 md:grid-cols-2">
           <img className="w-full" src={About} alt="" />
           <div>
