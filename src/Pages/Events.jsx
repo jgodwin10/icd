@@ -21,6 +21,7 @@ const Events = () => {
             </h1>
           </div>
         </div>
+        
       </div>
       <div className="max-w-[1500px] py-12 md:py-20 md:px-[50px] px-6 mx-auto">
         <div className="grid grid-cols-1 py- gap-y-10 md:grid-cols-2">
