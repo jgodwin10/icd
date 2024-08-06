@@ -47,14 +47,28 @@ const Navbar = () => {
           onClick={() => setNavOpen(false)}
           className="absolute top-10 cursor-pointer right-10 size-10"
         />
-        <NavLink to={"/about-us"}>about</NavLink>
-        <NavLink to={"/academics"}>academics</NavLink>
-        <NavLink to={"/programs"}>programs</NavLink>
-        <NavLink to={"/events"}>events</NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/about-us"}>
+          about
+        </NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/academics"}>
+          academics
+        </NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/programs"}>
+          programs
+        </NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/events"}>
+          events
+        </NavLink>
         {/* <NavLink>research</NavLink> */}
-        <NavLink to={"/news"}>news</NavLink>
-        <NavLink to={"/partnership"}>partnerships</NavLink>
-        <NavLink to={"/"}>media</NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/news"}>
+          news
+        </NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/partnership"}>
+          partnerships
+        </NavLink>
+        <NavLink onClick={() => setNavOpen(false)} to={"/"}>
+          media
+        </NavLink>
         <button
           onClick={() => navigate("/partner")}
           className="bg-[#34b376] text-white font-semibold rounded-[5px] 2xl:text-base  text-[14px] w-[140px] h-[50px] lg:text-[1vw] hover:scale-[1.05] duration-500 lg:h-[4vw] 2xl:h-[50px] lg:w-[12vw] 2xl:w-[175px]"
