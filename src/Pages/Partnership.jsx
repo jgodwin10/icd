@@ -5,8 +5,11 @@ import Img2 from "../Images/partner3.jpg";
 import Img3 from "../Images/partner4.jpg";
 import Img4 from "../Images/partner5.jpg";
 import Img5 from "../Images/partner6.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Partnership = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="bg-[url('/src/Images/hero.jpg')] before:absolute before:contents-[''] before:top-0 before:w-full before:h-full before:bg-[#00000066] relative bg-cover bg-center h-[60vh] md:h-[60vh] w-full">
@@ -93,7 +96,10 @@ const Partnership = () => {
                     <li>Become a partner</li>
                     <li>Contact us to discuss partnership opportunities</li>
                   </ul>
-                  <button className="bg-[#34b376] text-white font-semibold rounded-[5px] 2xl:text-base text-[14px] md:text-[1.2vw] hover:scale-[1.05] duration-500 md:h-[4vw] 2xl:h-[50px] h-[40px] w-[140px] md:w-[12vw] 2xl:w-[175px]">
+                  <button
+                    onClick={() => navigate("/partner")}
+                    className="bg-[#34b376] text-white font-semibold rounded-[5px] 2xl:text-base text-[14px] md:text-[1.2vw] hover:scale-[1.05] duration-500 md:h-[4vw] 2xl:h-[50px] h-[40px] w-[140px] md:w-[12vw] 2xl:w-[175px]"
+                  >
                     Partner with us
                   </button>
                 </div>

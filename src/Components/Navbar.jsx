@@ -15,6 +15,7 @@ const Navbar = () => {
           <img className="md:h-[90px] h-[50px]" src={Logo} alt="" />
         </Link>
         <div className="uppercase hidden text-[1.2vw] 2xl:text-base lg:flex items-center gap-3">
+          <NavLink to={"/"}>home</NavLink>
           <NavLink to={"/about-us"}>about</NavLink>
           <NavLink to={"/academics"}>academics</NavLink>
           <NavLink to={"/programs"}>programs</NavLink>
@@ -47,6 +48,9 @@ const Navbar = () => {
           onClick={() => setNavOpen(false)}
           className="absolute top-10 cursor-pointer right-10 size-10"
         />
+        <NavLink onClick={() => setNavOpen(false)} to={"/"}>
+          home
+        </NavLink>
         <NavLink onClick={() => setNavOpen(false)} to={"/about-us"}>
           about
         </NavLink>
@@ -70,7 +74,10 @@ const Navbar = () => {
           media
         </NavLink>
         <button
-          onClick={() => navigate("/partner")}
+          onClick={() => {
+            navigate("/partner");
+            setNavOpen(false);
+          }}
           className="bg-[#34b376] text-white font-semibold rounded-[5px] 2xl:text-base  text-[14px] w-[140px] h-[50px] lg:text-[1vw] hover:scale-[1.05] duration-500 lg:h-[4vw] 2xl:h-[50px] lg:w-[12vw] 2xl:w-[175px]"
         >
           Partner with us
