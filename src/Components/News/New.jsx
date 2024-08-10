@@ -40,7 +40,7 @@ const New = () => {
       title:
         "ICD Nigeria promotes peace in Edo elections and offers scholarships for youth",
       text: "The Institute for Cultural Diplomacy (ICD) urges peace and unity ahead of the Edo State gubernatorial election. Mr. Dickson Omoregie, ICD's Country Representative, congratulates candidates and emphasises viewing Edo State as a collective project, not a personal venture. He calls for realistic campaign promises and urges leaders to discourage violence. ICD also announces scholarships for Edo youth, promoting education and empowerment. Join us in building a peaceful future for Edo!",
-      date: "June 20, 2023",
+      date: "July 21, 2016",
       link: "https://tgnews.com.ng/institute-for-cultural-diplomacy-calls-for-peace-in-the-forthcoming-guber-election-promises-scholarship-for-edo-youth/",
     },
   ];
